@@ -13,7 +13,7 @@ public class SecondDummyTest {
 
     @Test
     public void secondtestThatAlwaysFails() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(20000);
 //        boolean a = rnd.nextBoolean();
 //        assertTrue(a);
         int b = rnd.nextInt(3);
