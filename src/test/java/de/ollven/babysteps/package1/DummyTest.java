@@ -1,30 +1,32 @@
 package de.ollven.babysteps.package1;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
 
 public class DummyTest {
 
     @Test
     public void testThatAlwaysFails() throws InterruptedException {
         Thread.sleep(2000);
-        Assertions.assertTrue(false);    }
+        assertTrue(false);    }
 
     @Test
     public void testThatAlwaysPasses() throws InterruptedException {
         Thread.sleep(1000);
-        Assertions.assertTrue(true);
+        assertTrue(true);
     }
 
     @Test
     public void testThatIsSlowButAlwaysFails() throws InterruptedException {
         Thread.sleep(1000);
-        Assertions.assertTrue(true);
+        assertTrue(true);
     }
 
     @Test
     public void testThatIsSlowButAlwaysPasses() throws InterruptedException {
         Thread.sleep(1000);
-        Assertions.assertTrue(true);
+        assertTrue(true);
     }
 }

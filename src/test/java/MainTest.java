@@ -1,9 +1,8 @@
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Disabled;
+import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 
-class MainTest {
+public class MainTest {
 
     @Test
     public void testResult() {
@@ -12,6 +11,6 @@ class MainTest {
         int c = 7;
         int actual = Main.result(a, b, c);
         int expected = 4;
-        Assertions.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 }
